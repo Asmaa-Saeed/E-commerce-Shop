@@ -14,10 +14,10 @@ const Button: React.FC<ButtonProps> = ({
   variant = 'default',
   className,
 }) => {
-  const baseStyles = 'px-4 py-2 rounded-full font-medium capitalize transition-all duration-300';
+  const baseStyles = 'px-4 py-1 rounded-full font-medieum capitalize transition-all duration-300';
   const variants = {
-    default: 'bg-pink-500 text-white hover:bg-pink-600',
-    outline: 'border border-pink-500 text-pink-500 hover:bg-pink-100',
+    default: 'bg-teal-600 text-white cursor-pointer hover:bg-teal-700',
+    outline: 'border border-teal-600 cursor-pointer text-teal-600 hover:bg-teal-100',
   };
 
   return (

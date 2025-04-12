@@ -7,7 +7,7 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({ children, className }) => {
   return (
-    <div className={`rounded-xl shadow-md bg-white overflow-hidden ${className}`}>
+    <div className={`rounded-md shadow-lg bg-white overflow-hidden ${className}`}>
       {children}
     </div>
   );
