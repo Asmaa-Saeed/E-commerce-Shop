@@ -1,12 +1,12 @@
 import { Category } from '../Types/Categories';
 
 // Import images
-import camera from '../assets/Categories/camera.png';
-import shoes from '../assets/Categories/shoes.png';
-import photography from '../assets/Categories/photography.png';
-import fashion from '../assets/Categories/fashion.png';
-import bags from '../assets/Categories/bags.png';
-import home from '../assets/Categories/home.png';
+import camera from '../assets/Categories/camera.jpg';
+import shoes from '../assets/Categories/shoes2.jpg';
+import photography from '../assets/Categories/photographer.jpg';
+import fashion from '../assets/Categories/fashion.jpg';
+import bags from '../assets/Categories/bags.jpg';
+import home from '../assets/Categories/home.jpg';
 
 export const categories: Category[] = [
   {
