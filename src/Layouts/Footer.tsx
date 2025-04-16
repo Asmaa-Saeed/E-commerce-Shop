@@ -68,12 +68,12 @@ const Footer: React.FC = () => {
           <div className="space-y-6">
             <div className="text-sm">
               <p>
-                <span className="text-blue-400  tracking-wide leading-normal">@ShopCart</span> Greetings! #HTML_Template Grab your item, 50% Big Sale Offer !!
+                <span className="text-blue-400  tracking-wide leading-loose">@ShopCart</span> Greetings! #HTML_Template Grab your item, 50% Big Sale Offer !!
               </p>
             </div>
             <div className="text-sm">
               <p>
-                <span className="text-blue-400  tracking-wide leading-normal">@ShopCart</span> Hey! #HTML_Template Grab your item, 50% Big Sale Offer !!
+                <span className="text-blue-400  tracking-wide leading-loose">@ShopCart</span> Hey! #HTML_Template Grab your item, 50% Big Sale Offer !!
               </p>
             </div>
           </div>
