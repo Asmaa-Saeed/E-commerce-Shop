@@ -9,7 +9,7 @@ const ProductsCategories: React.FC = () => {
       <p className="text-gray-500 mb-16 tracking-wider">Buy Everything with Us</p>
       <div className="grid grid-cols-1 my-6 sm:grid-cols-2 md:grid-cols-3 gap-14 max-w-6xl mx-auto">
         {categories.map((cat: Category, index: number) => (
-          <div key={index} className="bg-white rounded-sm overflow-hidden duration-300 shadow-[0_0_10px_rgba(0,0,0,0.2)] hover:shadow-[0_0_1px_rgba(251,191,36,0.7] hover:-translate-y-2  transition-all cursor-pointer">
+          <div key={index} className="bg-white rounded-sm overflow-hidden duration-300 hover:ring-amber-600 shadow-[0_0_10px_rgba(0,0,0,0.2)]  hover:-translate-y-2  transition-all cursor-pointer">
             <div className="relative">
               <img
                 src={cat.image}

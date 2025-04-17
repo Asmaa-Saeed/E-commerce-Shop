@@ -6,7 +6,7 @@ import { FaShoppingBasket, FaCartPlus, FaCreditCard } from 'react-icons/fa';
 const About = () => {
     return (
         <div>
-        <div className="flex flex-col md:flex-row items-center justify-center mt-10">
+        <div className="flex flex-col md:flex-row items-center justify-center mt-16">
       {/* Left Section - Images */}
       <div className="flex flex-col md:flex-row md:space-x-4 mb-4 md:mb-0 items-end">
         <div className="relative mb-4 md:mb-0 w-96 h-96 ">
