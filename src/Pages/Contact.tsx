@@ -2,6 +2,7 @@ import BGImage from '../assets/BackgroundImage/bg.jpg';
 import Footer from '../Layouts/Footer';
 import { FaEnvelope, FaPhone } from 'react-icons/fa';
 import ContactForm from '../Sections/Contact/ContactForm';
+import Map from '../Sections/Contact/Map';
 
 
 const Contact = () => {
@@ -19,13 +20,15 @@ const Contact = () => {
 
          {/* Map and Contact Info */}
          <div className='m-auto flex items-center flex-col mt-20 mb-10 '>
-            <h1 className='text-teal-600 text-2xl mb-2 tracking-wide'>Get In Touch With Us</h1>
+            <h1 className='text-teal-600 text-2xl mb-2 font-bold tracking-wide'>Get In Touch With Us</h1>
             <h3 className='mb-3 tracking-wide'>We're Always Eager To Hear From You!</h3>
          </div>
          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl md:mx-auto sm:mx-3 mx-2">
          {/* Map Placeholder */}
-         <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-           <p className="text-gray-500">Map Placeholder (Google Map)</p>
+         <div className="bg-white h-[480px] rounded-lg overflow-hidden shadow-lg">
+           <div className="h-full w-full">
+             <Map/>
+           </div>
          </div>
 
          {/* Contact Details */}
