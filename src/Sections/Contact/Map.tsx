@@ -10,17 +10,24 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 });
 
-const Map: React.FC = () => {
-  // Coordinates for Cairo, Egypt
+interface MapProps {
+  className?: string;
+  zoom?: number;
+  disableInteraction?: boolean;
+}
+
+const Map: React.FC<MapProps> = ({ className = '', zoom = 13, disableInteraction = false }) => {
   const position: [number, number] = [30.0444, 31.2357];
 
   return (
-    <div className="h-[500px] w-full">
+    <div className={`${className}`}>
       <MapContainer
         center={position}
-        zoom={13}
-        style={{ height: '100%', width: '100%' }}
-        className="rounded-lg shadow-lg"
+        zoom={zoom}
+        className="h-full w-full rounded-lg"
+        zoomControl={!disableInteraction}
+        dragging={!disableInteraction}
+        scrollWheelZoom={!disableInteraction}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

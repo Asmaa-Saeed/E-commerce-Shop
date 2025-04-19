@@ -27,7 +27,7 @@ const Contact = () => {
          {/* Map Placeholder */}
          <div className="bg-white h-[480px] rounded-lg overflow-hidden shadow-lg">
            <div className="h-full w-full">
-             <Map/>
+             <Map className="w-full h-full" zoom={13} />
            </div>
          </div>
 
