@@ -1,4 +1,5 @@
 import Footer from "../Layouts/Footer";
+import AboutUsSection from "../Sections/home-sections/AboutUsSection";
 import CustomerSection from "../Sections/home-sections/CustomerSection";
 // import Navbar from "../ Layouts / Navbar";
 import HeroSection from "../Sections/home-sections/HeroSection";
@@ -15,6 +16,7 @@ const Home = () => {
           <ProductSection/>
           <RegistrationSection/>
           <CustomerSection/>
+          <AboutUsSection/>
           <Footer/>
        </div> 
     )
