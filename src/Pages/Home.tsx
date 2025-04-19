@@ -12,7 +12,6 @@ import RegistrationSection from "../Sections/home-sections/Resgisteration";
 const Home = () => {
     return (
        <div>
-
           <HeroSection/>
           <ProductsCategories/>
           <ProductSection/>

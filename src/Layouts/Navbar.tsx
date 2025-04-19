@@ -1,101 +1,83 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/Logo/logo.png';
 import { NavLink } from 'react-router-dom';
 
+const Navbar: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-// Define the type for the Navbar props (if you plan to add props later)
-interface NavbarProps {
-  // You can add props here if needed, e.g., className: string;
-}
+  const handleNavLinkClick = () => {
+    setIsMenuOpen(false);
+  };
 
-// Functional component with TypeScript
-const Navbar: React.FC<NavbarProps> = () => {
+  const navLinkStyles = ({ isActive }: { isActive: boolean }) =>
+    `text-black hover:border-b-2 hover:border-teal-700 transition-all duration-400 ease-in-out font-medium ${
+      isActive ? 'text-teal-600' : ''
+    }`;
+
   return (
-    <nav className="flex items-center justify-between p-4 bg-white shadow-md">
-      {/* Logo Section */}
-      <div className="flex items-center">
-        <div className="flex items-center mr-2">
-          <img src={logo} alt="ShopCart Logo" className="w-30 h-15" />
+    <nav className="relative bg-white shadow-md">
+      <div className="max-w-7xl mx-auto px-4 py-4">
+        <div className="flex items-center justify-between">
+          {/* Logo Section */}
+          <div className="flex items-center">
+            <img src={logo} alt="ShopCart Logo" className="w-30 h-15" />
+          </div>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-6">
+            <NavLink to="/home" className={navLinkStyles}>Home</NavLink>
+            <NavLink to="/shop" className={navLinkStyles}>Shop</NavLink>
+            <NavLink to="/cart" className={navLinkStyles}>Cart</NavLink>
+            <NavLink to="/blog" className={navLinkStyles}>Blog</NavLink>
+            <NavLink to="/about" className={navLinkStyles}>About</NavLink>
+            <NavLink to="/contact" className={navLinkStyles}>Contact</NavLink>
+          </div>
+
+          {/* Login Button - Desktop */}
+          <div className="hidden md:block">
+            <button className="flex items-center bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700 duration-200 ease-in-out">
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Log In
+            </button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <button onClick={toggleMenu} className="text-gray-600 hover:text-teal-600 focus:outline-none">
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                {isMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
 
-      {/* Navigation Links */}
-      <div className="flex space-x-6">
-        <NavLink to="/home" className={({ isActive }) =>
-            `text-black hover:border-b-2 hover:border-teal-700 transition-all duration-200 ease-in-out font-medium ${
-              isActive ? 'text-teal-600' : ''
-            }`
-          }>
-          Home
-        </NavLink>
-        <NavLink to="/shop" className={({ isActive }) =>
-            `text-black hover:border-b-2 hover:border-teal-700 transition-all duration-200 ease-in-out font-medium ${
-              isActive ? 'text-teal-600' : ''
-            }`
-          }>
-          Shop
-        </NavLink>
-        <NavLink
-          to="/cart"
-          className={({ isActive }) =>
-            `text-black hover:border-b-2 hover:border-teal-700 transition-all duration-200 ease-in-out font-medium ${
-              isActive ? 'text-teal-600' : ''
-            }`
-          }>
-          Cart
-        </NavLink>
-        <NavLink
-          to="/blog"
-          className={({ isActive }) =>
-            `text-black hover:border-b-2 hover:border-teal-700 transition-all duration-200 ease-in-out font-medium ${
-              isActive ? 'text-teal-600' : ''
-            }`
-          }
-          >
-          Blog
-        </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            `text-black hover:border-b-2 hover:border-teal-700 transition-all duration-200 ease-in-out font-medium ${
-              isActive ? 'text-teal-600' : ''
-            }`
-          }
-        >
-          About
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            `text-black hover:border-b-2 hover:border-teal-700 transition-all duration-200 ease-in-out font-medium ${
-              isActive ? 'text-teal-600' : ''
-            }`
-          }
-        >
-          Contact
-        </NavLink>
-      </div>
-
-      {/* Login Button */}
-      <div>
-        <button className="flex items-center cursor-pointer bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700 duration-200 ease-in-out">
-          <svg
-            className="w-4 h-4 mr-2"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-          Log In
-        </button>
+        {/* Mobile Menu */}
+        <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden mt-4`}>
+          <div className="flex flex-col space-y-4 pb-4">
+            <NavLink to="/home" className={navLinkStyles} onClick={handleNavLinkClick}>Home</NavLink>
+            <NavLink to="/shop" className={navLinkStyles} onClick={handleNavLinkClick}>Shop</NavLink>
+            <NavLink to="/cart" className={navLinkStyles} onClick={handleNavLinkClick}>Cart</NavLink>
+            <NavLink to="/blog" className={navLinkStyles} onClick={handleNavLinkClick}>Blog</NavLink>
+            <NavLink to="/about" className={navLinkStyles} onClick={handleNavLinkClick}>About</NavLink>
+            <NavLink to="/contact" className={navLinkStyles} onClick={handleNavLinkClick}>Contact</NavLink>
+            <button className="flex items-center justify-center bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700 duration-200 ease-in-out w-full">
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Log In
+            </button>
+          </div>
+        </div>
       </div>
     </nav>
   );

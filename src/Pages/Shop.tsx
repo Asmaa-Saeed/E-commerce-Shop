@@ -1,4 +1,7 @@
 import shopBg from '../assets/Shop/shopBg.jpg';
+import FilterSection from '../Sections/shop-sections/FilterSection';
+import ProductGrid from '../Sections/shop-sections/ProductGrid';
+
 const Shop = () => {
     return (
         <div>
@@ -7,6 +10,8 @@ const Shop = () => {
            <div className="absolute inset-0 bg-white opacity-10"></div>
            <h1 className="text-4xl font-bold text-black  z-10">Explore Our Amazing Products</h1>
            </div>
+           <FilterSection/>
+           <ProductGrid/>
         </div>
     )
 }
