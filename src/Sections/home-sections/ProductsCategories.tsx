@@ -5,7 +5,7 @@ import { Category } from '../../Types/Categories';
 const ProductsCategories: React.FC = () => {
   return (
     <section className="py-32 px-4 bg-white text-center">
-      <h2 className="text-3xl text-yellow-400 bg-teal-700 mx-auto rounded-sm px-35 py-1.5 max-w-fit  mb-4 tracking-wider">Choose Any Product</h2>
+      <h2 className="text-2xl text-yellow-300 bg-teal-700 mx-auto rounded-sm px-35 py-1.5 max-w-fit  mb-4 tracking-wider">Choose Any Product</h2>
       <p className="text-gray-500 mb-16 tracking-wider">Buy Everything with Us</p>
       <div className="grid grid-cols-1 my-6 sm:grid-cols-2 md:grid-cols-3 gap-14 max-w-6xl mx-auto">
         {categories.map((cat: Category, index: number) => (

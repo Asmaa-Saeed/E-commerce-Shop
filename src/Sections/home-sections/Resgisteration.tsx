@@ -3,7 +3,7 @@ import backgroundImage from '../../assets/Home/regestrationBg.jpg';
 
 const RegistrationSection: React.FC = () => {
   return (
-    <div className="relative min-h-[400px] flex items-center justify-center py-10 px-4">
+    <div className="relative min-h-[400px] flex items-center justify-center py-10 px-4 mt-20">
       {/* Background Image Container */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
@@ -27,7 +27,7 @@ const RegistrationSection: React.FC = () => {
         {/* Right Section: Registration Form */}
         <div className="md:w-1/2 flex justify-center">
           <div className="bg-[rgba(255,255,255,0.39)] backdrop-blur-md rounded-2xl p-8 w-full max-w-md shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/40">
-            <h2 className="text-2xl font-semibold text-teal-600 tracking-wider mb-6">Register Now</h2>
+            <h2 className="text-2xl font-semibold text-teal-700 tracking-wider mb-6">Register Now</h2>
             <div className="space-y-4">
               <input
                 type="text"
@@ -46,7 +46,7 @@ const RegistrationSection: React.FC = () => {
               />
               <button
                 type="button"
-                className="w-full py-3.5 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 transition-all duration-300 tracking-widest cursor-pointer hover:shadow-lg"
+                className="w-full py-3.5 bg-teal-700 text-white font-semibold rounded-lg hover:bg-teal-800 transition-all duration-300 tracking-widest cursor-pointer hover:shadow-lg"
               >
                 Register Now
               </button>
