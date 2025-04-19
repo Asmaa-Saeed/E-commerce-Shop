@@ -1,6 +1,6 @@
 const AboutUsSection = () => {
   return (
-    <section className="py-32 bg-white text-center">
+    <section className="py-12 bg-white text-center">
       <h2 className="text-2xl text-yellow-300 bg-teal-700 mx-auto rounded-sm px-55 py-1.5 max-w-fit mb-12 tracking-wider">About Us</h2>
 
     <div className="bg-[#222222] text-white py-16 px-4">
