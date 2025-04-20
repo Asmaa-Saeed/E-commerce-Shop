@@ -1,4 +1,5 @@
 import React from 'react';
+import { Search } from "lucide-react";
 import IMage1 from '../../assets/Shop/PopularPosts/image01.jpg'
 import IMage2 from '../../assets/Shop/PopularPosts/image2.jpg'
 import IMage3 from '../../assets/Shop/PopularPosts/image3.jpg'
@@ -33,21 +34,36 @@ const PopularPosts: React.FC = () => {
   ];
 
   return (
-    <div className="w-[30%] p-4 mx-10 h-300 shadow-[0_0_10px_rgba(0,0,0,0.12)]">
+    <div className="w-[39%] mx-2 p-4">
+      {/* Search Section */}
+      <div className="mb-6">
+        <div className="flex items-center justify-center rounded-lg border border-gray-300 overflow-hidden bg-white shadow-sm">
+          <input
+            type="text"
+            placeholder="Search posts..."
+            className="w-full px-4 py-2 outline-none text-gray-700"
+          />
+          <button className="px-4 py-2 hover:bg-gray-50 transition-colors">
+            <Search className="text-gray-600 w-5 h-5" />
+          </button>
+        </div>
+      </div>
+      <div className='p-4 mx-2 shadow-[0_0_10px_rgba(0,0,0,0.12)]'>
       <h2 className="text-gray-500 text-xl font-semibold mb-4 text-center tracking-wider">Popular Post</h2>
-      <div className="grid grid-rows-1 sm:grid-rows-2 lg:grid-rows-4 gap-4  p-8">
+      <div className="grid grid-rows-1 sm:grid-rows-2 lg:grid-rows-4 gap-6 p-4">
         {posts.map((post, index) => (
-          <div key={index} className="flex flex-col items-center bg-white p-4 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.1)]">
+          <div key={index} className="flex flex-col items-center bg-white p-4 w-full rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.1)]">
             <img
               src={post.image}
               alt={post.title}
-              className="w-full h-40 object-cover rounded-lg mb-2"
+              className="w-full h-48 object-cover rounded-lg mb-3"
             />
             <h3 className="text-sm tracking-wide font-medium text-center">{post.title}</h3>
             <p className="text-xs mt-1.5 text-gray-500">{post.date}</p>
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
