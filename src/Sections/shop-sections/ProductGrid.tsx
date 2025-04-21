@@ -2,15 +2,27 @@ import { useState } from 'react';
 import ProductCard from '../../Components/ProductCard';
 import { products } from '../../Data/products';
 import PopularPosts from './PopularPosts';
+import FilterSection from './FilterSection';
 
 const ProductGrid = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 20;
+  const [selectedCategory, setSelectedCategory] = useState('all');
+  const productsPerPage = 10;
 
-  // Calculate pagination
+  // Filter products based on category
+  const filteredProducts = selectedCategory === 'all'
+    ? products
+    : products.filter(product => product.category === selectedCategory);
+
+  // Calculate pagination for filtered products
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-  const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+  const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
+
+  const handleCategoryChange = (category: string) => {
+    setSelectedCategory(category);
+    setCurrentPage(1); // Reset to first page when category changes
+  };
 
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
@@ -18,38 +30,50 @@ const ProductGrid = () => {
   };
 
   return (
-    <div className='flex'>
-      <div className="max-w-7xl mx-auto px-10 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {currentProducts.map((product) => (
-            <ProductCard
-              key={product.id}
-              name={product.name}
-              price={product.price}
-              rating={product.rating}
-              image={product.image}
-            />
-          ))}
+    <div className='flex flex-col gap-6 px-2 sm:px-4 lg:px-8 max-w-[1440px] mx-auto'>
+      {/* Filter Section */}
+      <div className="w-full">
+        <FilterSection onCategoryChange={handleCategoryChange} />
+      </div>
+
+      <div className='flex flex-col lg:flex-row gap-6 lg:gap-8'>
+        {/* Product Grid */}
+        <div className="w-full lg:w-3/4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
+            {currentProducts.map((product) => (
+              <ProductCard
+                key={product.id}
+                name={product.name}
+                price={product.price}
+                rating={product.rating}
+                image={product.image}
+              />
+            ))}
+          </div>
+          
+          {/* Pagination */}
+          <div className="flex flex-wrap justify-center mt-6 sm:mt-8 lg:mt-12 gap-2">
+            {[1, 2, 3, 4, 5].map((page) => (
+              <button
+                key={page}
+                onClick={() => handlePageChange(page)}
+                className={`w-7 h-7 sm:w-8 sm:h-8 cursor-pointer mb-20 text-sm sm:text-base rounded-full flex items-center justify-center border ${
+                  currentPage === page
+                    ? 'bg-teal-600 text-white border-teal-600'
+                    : 'border-gray-300 hover:border-teal-600 hover:text-teal-600 cursor-pointer'
+                } transition-colors duration-300`}
+              >
+                {page}
+              </button>
+            ))}
+          </div>
         </div>
-        
-        {/* Pagination */}
-        <div className="flex justify-center mt-12 gap-2">
-          {[1, 2, 3, 4, 5].map((page) => (
-            <button
-              key={page}
-              onClick={() => handlePageChange(page)}
-              className={`w-8 h-8 rounded-full flex items-center justify-center border ${
-                currentPage === page
-                  ? 'bg-teal-600 text-white border-teal-600'
-                  : 'border-gray-300 hover:border-teal-600 hover:text-teal-600'
-              } transition-colors duration-300`}
-            >
-              {page}
-            </button>
-          ))}
+
+        {/* Popular Posts Sidebar */}
+        <div className="w-full lg:w-1/4 lg:min-w-[300px]">
+          <PopularPosts/>
         </div>
       </div>
-      <PopularPosts/>
     </div>
   );
 };
