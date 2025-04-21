@@ -5,6 +5,8 @@ import post3Img from '../assets/Blog/posts/post3.jpg'
 import post4Img from '../assets/Blog/posts/post4.jpg'
 import post5Img from '../assets/Blog/posts/post5.jpg'
 import post6Img from '../assets/Blog/posts/post6.jpg'
+import post7Img from '../assets/Blog/posts/post07.jpg'
+import post8Img from '../assets/Blog/posts/post08.jpg'
 import post9Img from '../assets/Blog/posts/post9.jpg'
 import post10Img from '../assets/Blog/posts/post10.jpg'
 import post11Img from '../assets/Blog/posts/post11.jpg'
@@ -73,7 +75,7 @@ const posts: BlogPost[] = [
   },
   {
     id: 7,
-    image: '/assets/post7.jpg',
+    image: post7Img,
     title: 'How to Care for Your Airpods to Last Longer',
     author: 'Nina Torres',
     date: 'Jun 07, 2025',
@@ -83,7 +85,7 @@ const posts: BlogPost[] = [
   },
   {
     id: 8,
-    image: '/assets/post8.jpg',
+    image: post8Img,
     title: 'Mix and Match: Shopping for Statement Clothing',
     author: 'Aisha Khan',
     date: 'Jun 08, 2025',

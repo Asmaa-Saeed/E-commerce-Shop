@@ -1,8 +1,9 @@
-import BGImage from '../assets/BackgroundImage/bg.jpg';
+import BGImage from '../assets/Contact/contactBg.jpg';
 import Footer from '../Layouts/Footer';
 import { FaEnvelope, FaPhone } from 'react-icons/fa';
 import ContactForm from '../Sections/Contact/ContactForm';
 import Map from '../Sections/Contact/Map';
+
 
 
 const Contact = () => {
@@ -12,8 +13,8 @@ const Contact = () => {
           className="relative w-full h-80 flex  items-center justify-center bg-cover bg-center"
           style={{ backgroundImage: `url(${BGImage})` }}
         >
-          <div className="absolute inset-0 bg-white opacity-70"></div>
-          <h2 className="relative text-4xl font-bold  tracking-wide leading-normal text-center text-black z-10">
+          <div className="absolute inset-0 bg-white opacity-5 backdrop-blur-lg"></div>
+          <h2 className="relative text-4xl font-bold  tracking-wide leading-normal text-center text-gray-200 z-10">
             Get In Touch With Us
           </h2>
         </div>

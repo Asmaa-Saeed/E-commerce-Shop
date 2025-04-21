@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
 
           {/* Login Button - Desktop */}
           <div className="hidden md:block">
-            <button className="flex items-center bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700 duration-200 ease-in-out">
+            <button className="flex items-center bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700 cursor-pointer duration-200 ease-in-out">
               <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
               </svg>
@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button onClick={toggleMenu} className="text-gray-600 hover:text-teal-600 focus:outline-none">
+            <button onClick={toggleMenu} className="text-gray-600 cursor-pointer hover:text-teal-600 focus:outline-none">
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
             <NavLink to="/blog" className={navLinkStyles} onClick={handleNavLinkClick}>Blog</NavLink>
             <NavLink to="/about" className={navLinkStyles} onClick={handleNavLinkClick}>About</NavLink>
             <NavLink to="/contact" className={navLinkStyles} onClick={handleNavLinkClick}>Contact</NavLink>
-            <button className="flex items-center justify-center bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700 duration-200 ease-in-out w-full">
+            <button className="flex items-center justify-center bg-teal-700 text-white px-4 py-2 rounded hover:bg-teal-800 duration-200 ease-in-out w-full  cursor-pointer">
               <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
               </svg>

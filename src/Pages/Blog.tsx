@@ -6,8 +6,8 @@ const Blog = () => {
         <div>
         <div className=" relative w-full h-92 bg-cover bg-center flex items-center justify-center"
         style={{backgroundImage: `url(${blogBg})` }}>
-        <div className="absolute inset-0 bg-white opacity-50 backdrop-blur-lg"></div>
-        <h1 className="text-4xl font-bold text-white text-shadow-blue-100 text-shadow z-10">Stay Updated With Our Latest News & Stories</h1>
+        <div className="absolute inset-0 bg-white/40 opacity-10 backdrop-blur-lg"></div>
+        <h1 className="text-4xl font-bold text-gray-200 text-shadow-blue-100 text-shadow z-10 tracking-wide">Stay Updated With Our Latest News & Stories</h1>
         </div>
         <div className="container max-w-[95%] mx-auto px-4 py-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

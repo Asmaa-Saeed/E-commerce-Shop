@@ -56,7 +56,7 @@ const About = () => {
               <span className="text-red-500"><FaCartPlus size ={20}/></span>
             </div>
             <div>
-              <h3 className="font-semibold">Add It To Cart</h3>
+              <h3 className="font-semibold tracking-wide">Add It To Cart</h3>
               <p className="text-gray-500">
                 Distinctively provide access mutfuncto users whereas communicate leveraged services
               </p>
@@ -68,7 +68,7 @@ const About = () => {
               <span className="text-yellow-600"><FaCreditCard size={20}/></span>
             </div>
             <div>
-              <h3 className="font-semibold">Buy It</h3>
+              <h3 className="font-semibold tracking-wide">Buy It</h3>
               <p className="text-gray-500">
                 Distinctively provide access mutfuncto users whereas communicate leveraged services
               </p>

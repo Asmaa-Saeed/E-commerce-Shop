@@ -17,19 +17,20 @@ const ProductSection: React.FC = () => {
   return (
     <div className="p-8">
       <div
-        className="flex justify-between items-center border border-gray-300 py-6 px-4 mb-10 rounded-md shadow-md"
+        className="flex flex-col sm:flex-row justify-between items-center border border-gray-300 py-3 sm:py-4 md:py-6 px-2 sm:px-3 md:px-4 mb-4 sm:mb-6 md:mb-10 rounded-md shadow-md gap-3 sm:gap-4 md:gap-0"
         style={{
-          boxShadow: '0 0 5px 3px rgba(12, 178, 164, 0.57)', // Teal shadow on all four sides
+          boxShadow: '0 0 5px 3px rgba(12, 178, 164, 0.57)', 
         }}
       >
-        <h2 className="text-2xl font-bold text-yellow-400">Our Product</h2>
+        <h2 className="text-xl sm:text-2xl font-bold text-yellow-400">Our Product</h2>
 
-        <div className="flex gap-4">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
           {categories.map((category) => (
             <Button
               key={category}
               onClick={() => setSelectedCategory(category)}
               variant={selectedCategory === category ? 'default' : 'outline'}
+              className="text-sm sm:text-base"
             >
               {category}
             </Button>

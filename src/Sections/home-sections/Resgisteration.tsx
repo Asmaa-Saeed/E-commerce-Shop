@@ -16,33 +16,33 @@ const RegistrationSection: React.FC = () => {
       <div className="relative z-10 max-w-5xl w-full flex flex-col md:flex-row items-center justify-between">
         {/* Left Section: Promotional Content */}
         <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-          <p className="text-yellow-400 text-sm uppercase font-semibold">Save The Day</p>
-          <h1 className="text-3xl md:text-4xl font-bold text-white mt-2">
+          <p className="text-yellow-400 text-sm uppercase font-semibold tracking-wide">Save The Day</p>
+          <h1 className="text-3xl md:text-4xl font-bold text-white mt-2 tracking-wider">
             Join On Day Long Free <br />
             Workshop For <span className="text-yellow-400">Advanced Mastering</span> On Sales
           </h1>
-          <p className="text-gray-300 text-sm mt-4">Limited Time Offer! Hurry Up</p>
+          <p className="text-gray-300 text-sm mt-4 tracking-wide">Limited Time Offer! Hurry Up</p>
         </div>
 
         {/* Right Section: Registration Form */}
         <div className="md:w-1/2 flex justify-center">
-          <div className="bg-[rgba(255,255,255,0.39)] backdrop-blur-md rounded-2xl p-8 w-full max-w-md shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/40">
-            <h2 className="text-2xl font-semibold text-teal-700 tracking-wider mb-6">Register Now</h2>
+          <div className="bg-[rgba(255,255,255,0.13)] backdrop-blur-xl rounded-2xl p-8 w-full max-w-md shadow-[0_8px_30px_rgb(0,0,0,0.12)] border">
+            <h2 className="text-2xl font-semibold text-teal-700 tracking-wider mb-6 text-shadow-teal-100">Register Now</h2>
             <div className="space-y-4">
               <input
                 type="text"
                 placeholder="UserName"
-                className="w-full p-3 rounded-lg bg-white/70 text-gray-800 placeholder-gray-500 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-transparent"
+                className="w-full p-3 rounded-lg bg-[rgba(255,255,255,0.13)] text-gray-800 placeholder-gray-500 border border-[rgba(255,255,255,0.13)] focus:outline-none focus:ring-1 focus:ring-teal-600 focus:border-transparent tracking-wide"
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full p-3 rounded-lg bg-white/70 text-gray-800 placeholder-gray-500 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-transparent"
+                className="w-full p-3 rounded-lg bg-[rgba(255,255,255,0.13)] text-gray-800 placeholder-gray-500 border border-[rgba(255,255,255,0.13)] focus:outline-none focus:ring-1 focus:ring-teal-600 focus:border-transparent tracking-wide"
               />
               <input
                 type="tel"
                 placeholder="Phone"
-                className="w-full p-3 rounded-lg bg-white/70 text-gray-800 placeholder-gray-500 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-transparent"
+                className="w-full p-3 rounded-lg bg-[rgba(255,255,255,0.13)] text-gray-800 placeholder-gray-500 border border-[rgba(255,255,255,0.13)] focus:outline-none focus:ring-1 focus:ring-teal-600 focus:border-transparent tracking-wide"
               />
               <button
                 type="button"
