@@ -319,8 +319,8 @@ export const products: Product[] = [
     name: 'CASUAL MAXI DRESS',
     price: 85,
     rating: 4,
-    image: LadiesImg05,
-    category: 'Ladies'
+    image: PerfumesImg05,
+    category: 'perfumes'
   },
   {
     id: 33,
