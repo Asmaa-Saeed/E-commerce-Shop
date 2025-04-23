@@ -9,6 +9,7 @@ interface BlogPost {
   excerpt: string;
   likes: number;
   comments: number;
+  content: string;
 }
 
 export default BlogPost
