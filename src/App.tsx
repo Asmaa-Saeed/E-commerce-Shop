@@ -8,6 +8,8 @@ import Blog from './Pages/Blog'
 import Contact from './Pages/Contact'
 import About from './Pages/About'
 import PostDetails from './Pages/PostDetails'
+import Login from './Pages/Registeration/Login'
+import SignUp from './Pages/Registeration/SignUp'
 // import PostDetails from './Pages/PostDetails'
 
 function App() {
@@ -26,6 +28,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/postDetails" element={<PostDetails />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signUp" element={<SignUp />} />
+
       </Routes>
     </Router> 
     </>

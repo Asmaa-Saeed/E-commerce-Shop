@@ -10,11 +10,11 @@ const Contact = () => {
     return (
         <div>
         <div
-          className="relative w-full h-80 flex  items-center justify-center bg-cover bg-center"
+          className="relative w-full h-110 flex items-center justify-center bg-cover bg-center "
           style={{ backgroundImage: `url(${BGImage})` }}
         >
-          <div className="absolute inset-0 bg-white opacity-5 backdrop-blur-lg"></div>
-          <h2 className="relative text-4xl font-bold  tracking-wide leading-normal text-center text-gray-200 z-10">
+          <div className="absolute inset-0 bg-[rgba(35,52,123,0.6)] opacity-5 backdrop-blur-lg"></div>
+          <h2 className="relative text-5xl font-bold tracking-wide leading-normal text-center text-gray-200 z-10">
             Get In Touch With Us
           </h2>
         </div>
