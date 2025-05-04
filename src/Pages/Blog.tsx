@@ -1,17 +1,17 @@
 import posts from '../Data/Blogs'
 import Footer from '../Layouts/Footer';
-import blogBg from '../assets/Blog/blogBg.jpg';
 import { NavLink } from 'react-router-dom';
+import PopularPosts from '../Sections/shop-sections/PopularPosts';
 const Blog = () => {
     return (
         <div>
-        <div className=" relative w-full h-92 bg-cover bg-center flex items-center justify-center"
-        style={{backgroundImage: `url(${blogBg})` }}>
-        <div className="absolute inset-0 bg-white/40 opacity-10 backdrop-blur-lg"></div>
-        <h1 className="text-4xl font-bold text-gray-200 text-shadow-blue-100 text-shadow z-10 tracking-wide">Stay Updated With Our Latest News & Stories</h1>
+        <div className='my-20'>
+        <h1 className="text-4xl font-bold text-teal-600 text-center text-shadow-blue-100 text-shadow  tracking-wide">Our Blog</h1>
+        <h1 className="text-xl font-bold text-gray-700 text-center mt-4 text-shadow-blue-100 text-shadow tracking-wide">Stay Updated With Our Latest News & Stories</h1>
         </div>
+        <div className='flex flex-col lg:flex-row gap-6 lg:gap-8'>
         <div className="container max-w-[95%] mx-auto px-4 py-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {posts.map((post) => (
           <div
             key={post.id}
@@ -70,6 +70,11 @@ const Blog = () => {
           </div>
         ))}
       </div>
+    </div>
+     {/* Popular Posts Sidebar */}
+     <div className="w-full lg:w-1/4 lg:min-w-[300px]">
+          <PopularPosts/>
+        </div>
     </div>
     <Footer/>
      </div>

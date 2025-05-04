@@ -134,19 +134,23 @@ const PostDetails = () => {
           <h3 className="text-2xl font-semibold text-gray-800 mb-6">Related Posts</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {relatedPosts.map((relatedPost) => (
-              <Link to={`/${String(relatedPost.id)}`} key={relatedPost.id}>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition w-full h-[350px] ">
-                  <img 
-                    src={relatedPost.image} 
-                    alt={relatedPost.title}
-                    className="w-full h-[150px] object-cover"
-                  />
-                  <div className="p-4 h-[200px] flex flex-col justify-between">
-                    <h4 className="text-lg font-semibold text-teal-600 mb-2">{relatedPost.title}</h4>
-                    <p className="text-gray-600 text-sm">{relatedPost.date}</p>
+              <div key={relatedPost.id} className="h-[350px]">
+                <Link to={`/${String(relatedPost.id)}`} className="block h-full">
+                  <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition h-full flex flex-col border border-gray-200">
+                    <div className="h-[150px] relative">
+                      <img 
+                        src={relatedPost.image} 
+                        alt={relatedPost.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-4 flex-1 flex flex-col justify-between bg-white">
+                      <h4 className="text-lg font-semibold text-teal-600 mb-2 line-clamp-2">{relatedPost.title}</h4>
+                      <p className="text-gray-600 text-sm">{relatedPost.date}</p>
+                    </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              </div>
             ))}
           </div>
         </div>

@@ -23,7 +23,7 @@ const FilterSection: React.FC<FilterSectionProps> = ({ onCategoryChange }) => {
   };
 
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-10 py-4 sm:py-6 lg:py-8">
+    <div className="w-full py-4 sm:py-6 lg:py-8">
       <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-4 bg-white rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.3)] p-4 sm:p-6 lg:p-8">
         <h4 className="text-lg sm:text-xl font-semibold text-teal-600 tracking-wider w-full sm:w-auto text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
           Filter Products

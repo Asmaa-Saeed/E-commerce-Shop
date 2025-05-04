@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import ProductCard from '../../Components/ProductCard';
 import { products } from '../../Data/products';
-import PopularPosts from './PopularPosts';
 import FilterSection from './FilterSection';
 
 const ProductGrid = () => {
@@ -38,8 +37,8 @@ const ProductGrid = () => {
 
       <div className='flex flex-col lg:flex-row gap-6 lg:gap-8'>
         {/* Product Grid */}
-        <div className="w-full lg:w-3/4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
+        <div className="w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
             {currentProducts.map((product) => (
               <ProductCard
                 key={product.id}
@@ -69,10 +68,7 @@ const ProductGrid = () => {
           </div>
         </div>
 
-        {/* Popular Posts Sidebar */}
-        <div className="w-full lg:w-1/4 lg:min-w-[300px]">
-          <PopularPosts/>
-        </div>
+       
       </div>
     </div>
   );

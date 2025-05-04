@@ -9,7 +9,7 @@ const RegistrationSection: React.FC = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="absolute inset-0 bg-black/60 backdrop-blur-[3px]"></div>
+        <div className="absolute inset-0 bg-black/5"></div>
       </div>
 
       {/* Content Container */}
@@ -25,28 +25,31 @@ const RegistrationSection: React.FC = () => {
         </div>
 
         {/* Right Section: Registration Form */}
-        <div className="md:w-1/2 flex justify-center">
-          <div className="bg-gradient-to-b from-gray-50 via-brown-500 to-brown-700 rounded-2xl p-8 w-full max-w-md shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+        <div className="md:w-2/3 flex justify-center">
+          <div className="bg-gradient-to-b from-gray-50 via-brown-200 to-brown-700 rounded-xl p-8 w-full max-w-md">
             <h2 className="text-2xl font-semibold text-teal-700 tracking-wider mb-6 text-shadow-teal-100">Register Now</h2>
             <div className="space-y-4">
               <input
                 type="text"
                 placeholder="UserName"
-                className="w-full p-3 rounded-lg bg-[rgba(255,255,255,0.13)] text-gray-800 placeholder-gray-300 border border-[rgba(255,255,255,0.13)] focus:outline-none focus:ring-1 focus:ring-teal-600 focus:border-transparent tracking-wide"
+                autoComplete='off'
+                className="w-full p-3 rounded-lg bg-gray-50 text-gray-800 placeholder-gray-400 border border-[rgba(255,255,255,0.13)] focus:outline-none focus:ring-1 focus:ring-teal-600 focus:border-transparent tracking-wide"
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full p-3 rounded-lg bg-[rgba(255,255,255,0.13)] text-gray-800 placeholder-gray-300 border border-[rgba(255,255,255,0.13)] focus:outline-none focus:ring-1 focus:ring-teal-600 focus:border-transparent tracking-wide"
+                autoComplete='email'
+                className="w-full p-3 rounded-lg bg-gray-50 text-gray-800 placeholder-gray-400 border border-[rgba(255,255,255,0.13)] focus:outline-none focus:ring-1 focus:ring-teal-600 focus:border-transparent tracking-wide"
               />
               <input
                 type="tel"
                 placeholder="Phone"
-                className="w-full p-3 rounded-lg bg-[rgba(255,255,255,0.13)] text-gray-800 placeholder-gray-300 border border-[rgba(255,255,255,0.13)] focus:outline-none focus:ring-1 focus:ring-teal-600 focus:border-transparent tracking-wide"
+                autoComplete='tel'
+                className="w-full p-3 rounded-lg bg-gray-50 text-gray-800 placeholder-gray-400 border border-[rgba(255,255,255,0.13)] focus:outline-none focus:ring-1 focus:ring-teal-600 focus:border-transparent tracking-wide"
               />
               <button
                 type="button"
-                className="w-full py-3.5 bg-teal-700 text-white font-semibold rounded-lg hover:bg-teal-800 transition-all duration-300 tracking-widest cursor-pointer hover:shadow-lg"
+                className="w-full px-3 py-3.5 bg-teal-700 text-white font-semibold rounded-lg hover:bg-teal-800 transition-all duration-300 tracking-widest cursor-pointer hover:shadow-lg"
               >
                 Register Now
               </button>
