@@ -10,6 +10,7 @@ interface BlogPost {
   likes: number;
   comments: number;
   content: string;
+  Quetes: string;
 }
 
 export default BlogPost

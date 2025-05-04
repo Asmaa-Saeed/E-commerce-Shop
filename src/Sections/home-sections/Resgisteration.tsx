@@ -26,23 +26,23 @@ const RegistrationSection: React.FC = () => {
 
         {/* Right Section: Registration Form */}
         <div className="md:w-1/2 flex justify-center">
-          <div className="bg-[rgba(255,255,255,0.13)] backdrop-blur-xl rounded-2xl p-8 w-full max-w-md shadow-[0_8px_30px_rgb(0,0,0,0.12)] border">
+          <div className="bg-gradient-to-b from-gray-50 via-brown-500 to-brown-700 rounded-2xl p-8 w-full max-w-md shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
             <h2 className="text-2xl font-semibold text-teal-700 tracking-wider mb-6 text-shadow-teal-100">Register Now</h2>
             <div className="space-y-4">
               <input
                 type="text"
                 placeholder="UserName"
-                className="w-full p-3 rounded-lg bg-[rgba(255,255,255,0.13)] text-gray-800 placeholder-gray-500 border border-[rgba(255,255,255,0.13)] focus:outline-none focus:ring-1 focus:ring-teal-600 focus:border-transparent tracking-wide"
+                className="w-full p-3 rounded-lg bg-[rgba(255,255,255,0.13)] text-gray-800 placeholder-gray-300 border border-[rgba(255,255,255,0.13)] focus:outline-none focus:ring-1 focus:ring-teal-600 focus:border-transparent tracking-wide"
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full p-3 rounded-lg bg-[rgba(255,255,255,0.13)] text-gray-800 placeholder-gray-500 border border-[rgba(255,255,255,0.13)] focus:outline-none focus:ring-1 focus:ring-teal-600 focus:border-transparent tracking-wide"
+                className="w-full p-3 rounded-lg bg-[rgba(255,255,255,0.13)] text-gray-800 placeholder-gray-300 border border-[rgba(255,255,255,0.13)] focus:outline-none focus:ring-1 focus:ring-teal-600 focus:border-transparent tracking-wide"
               />
               <input
                 type="tel"
                 placeholder="Phone"
-                className="w-full p-3 rounded-lg bg-[rgba(255,255,255,0.13)] text-gray-800 placeholder-gray-500 border border-[rgba(255,255,255,0.13)] focus:outline-none focus:ring-1 focus:ring-teal-600 focus:border-transparent tracking-wide"
+                className="w-full p-3 rounded-lg bg-[rgba(255,255,255,0.13)] text-gray-800 placeholder-gray-300 border border-[rgba(255,255,255,0.13)] focus:outline-none focus:ring-1 focus:ring-teal-600 focus:border-transparent tracking-wide"
               />
               <button
                 type="button"

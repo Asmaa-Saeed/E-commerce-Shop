@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ChangeEvent, FormEvent } from "react";
 
 const SignUp = () => {
 
@@ -12,18 +12,19 @@ const SignUp = () => {
         name?: string;
         email?: string;
         password?: string;
+        [key: string]: string | undefined;
       }
 
-    const [formData, setFormData] = React.useState({
+    const [formData, setFormData] = React.useState<formData>({
         name: '',
         email: '',
         password: '',
       });
-      const [errors, setErrors] = React.useState({});
+      const [errors, setErrors] = React.useState<errors>({});
       const [isSubmitting, setIsSubmitting] = React.useState(false);
 
-      const validateForm = () => {
-        const newErrors = {};
+      const validateForm = (): errors => {
+        const newErrors: errors = {};
         if (!formData.name) {
           newErrors.name = 'Name is required';
         } else if (formData.name.length < 2) {
@@ -42,7 +43,7 @@ const SignUp = () => {
         return newErrors;
       };
 
-      const handleChange = (e) => {
+      const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setFormData((prev) => ({
           ...prev,
@@ -53,7 +54,7 @@ const SignUp = () => {
         }
       };
 
-      const handleSubmit = (e) => {
+      const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const validationErrors = validateForm();
         if (Object.keys(validationErrors).length > 0) {
@@ -86,6 +87,7 @@ const SignUp = () => {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Name"
+                  autoComplete="name"
                   className={`border ${errors.name ? 'border-red-500' : 'border-gray-300'} rounded w-full p-2 mt-1 focus:outline-none focus:ring-1 focus:ring-teal-500 transition duration-200`}
                   aria-invalid={errors.name ? 'true' : 'false'}
                   aria-describedby={errors.name ? 'name-error' : undefined}
@@ -104,6 +106,7 @@ const SignUp = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Email"
+                  autoComplete="email"
                   className={`border ${errors.email ? 'border-red-500' : 'border-gray-300'} rounded w-full p-2 mt-1 focus:outline-none focus:ring-1 focus:ring-teal-500 transition duration-200`}
                   aria-invalid={errors.email ? 'true' : 'false'}
                   aria-describedby={errors.email ? 'email-error' : undefined}
@@ -122,6 +125,7 @@ const SignUp = () => {
                   value={formData.password}
                   onChange={handleChange}
                   placeholder="Password"
+                  autoComplete=""
                   className={`border ${errors.password ? 'border-red-500' : 'border-gray-300'} rounded w-full p-2 mt-1 focus:outline-none focus:ring-1 focus:ring-teal-500 transition duration-200`}
                   aria-invalid={errors.password ? 'true' : 'false'}
                   aria-describedby={errors.password ? 'password-error' : undefined}

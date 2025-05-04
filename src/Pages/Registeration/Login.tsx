@@ -1,30 +1,30 @@
-import React from "react";
+import React, { ChangeEvent, FormEvent } from "react";
 import { NavLink } from "react-router-dom";
 
 const Login = () => {
   // use state functions to enhance dynamic updates to the form and enhance the form validation and submission
   interface formData {
-    name: string;
     email: string;
     password: string;
+    remember: boolean;
   }
   
   interface errors {
-   
     email?: string;
     password?: string;
+    [key: string]: string | undefined;
   }
-  const [formData, setFormData] = React.useState({
+  const [formData, setFormData] = React.useState<formData>({
     email: "",
     password: "",
     remember: false,
   });
-  const [errors, setErrors] = React.useState({});
+  const [errors, setErrors] = React.useState<errors>({});
   const [isSubmitting, setIsSubmitting] = React.useState(false);
 
   // form validation
-  const validateForm = () => {
-    const newErrors = {};
+  const validateForm = (): errors => {
+    const newErrors: errors = {};
     if (!formData.email) {
       newErrors.email = "Email is required";
     } else if (
@@ -40,7 +40,7 @@ const Login = () => {
     }
     return newErrors;
   };
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value, type, checked } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -52,7 +52,7 @@ const Login = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const validationErrors = validateForm();
     if (Object.keys(validationErrors).length > 0) {
@@ -75,7 +75,7 @@ const Login = () => {
         <h1 className="text-2xl font-semibold text-center mb-2 tracking-wider">
           Welcome Back!
         </h1>
-        <h3 className="text-sm font-semibold text-center mb-8 tracking-wider">
+        <h3 className="text-[13px] text-gray-600 text-center mb-8 tracking-wider">
           Please sign in to your account
         </h3>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -88,6 +88,7 @@ const Login = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email"
+              autoComplete="email"
               className={`border ${
                 errors.email ? "border-red-500" : "border-gray-300"
               } rounded w-full p-2 mt-1 focus:outline-none focus:ring-1 focus:ring-teal-500 transition duration-200`}
@@ -108,6 +109,7 @@ const Login = () => {
               value={formData.password}
               onChange={handleChange}
               placeholder="Password"
+              autoComplete="password"
               className={`border ${
                 errors.password ? "border-red-500" : "border-gray-300"
               } rounded w-full p-2 mt-1 focus:outline-none focus:ring-1 focus:ring-teal-500 transition duration-200`}

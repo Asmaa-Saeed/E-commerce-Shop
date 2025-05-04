@@ -9,7 +9,7 @@ import Map from '../Sections/Contact/Map';
 const Contact = () => {
     return (
         <div>
-        <div
+        {/* <div
           className="relative w-full h-110 flex items-center justify-center bg-cover bg-center "
           style={{ backgroundImage: `url(${BGImage})` }}
         >
@@ -17,7 +17,7 @@ const Contact = () => {
           <h2 className="relative text-5xl font-bold tracking-wide leading-normal text-center text-gray-200 z-10">
             Get In Touch With Us
           </h2>
-        </div>
+        </div> */}
 
          {/* Map and Contact Info */}
          <div className='m-auto flex items-center flex-col mt-20 mb-10 '>

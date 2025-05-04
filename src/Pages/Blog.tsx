@@ -1,7 +1,7 @@
 import posts from '../Data/Blogs'
 import Footer from '../Layouts/Footer';
 import blogBg from '../assets/Blog/blogBg.jpg';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 const Blog = () => {
     return (
         <div>
@@ -23,9 +23,9 @@ const Blog = () => {
               className="w-full h-[280px] min-h-[280px]  p-1.5 rounded-lg object-cover"
             />
             <div className="p-4">
-              <Link to={`/postDetails/${post.id}`}>
+              <NavLink to={`/postDetails/${post.id}`}>
               <h2 className="text-lg font-bold text-gray-800 mb-3 tracking-wide hover:text-red-500 transition duration-200 cursor-pointer">{post.title}</h2>
-              </Link>
+              </NavLink>
               <div className="flex items-center text-sm text-gray-600 mb-3">
                 <span className="flex items-center">
                   <svg className="w-4 h-4 mr-1 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
