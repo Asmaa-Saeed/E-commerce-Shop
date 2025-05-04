@@ -9,7 +9,7 @@ const RegistrationSection: React.FC = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="absolute inset-0 bg-black/5"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
       {/* Content Container */}
