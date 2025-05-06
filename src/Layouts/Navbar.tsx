@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center space-x-6">
             <NavLink to="/home" className={navLinkStyles}>Home</NavLink>
             <NavLink to="/shop" className={navLinkStyles}>Shop</NavLink>
-            <NavLink to="/cart" className={navLinkStyles}>Cart</NavLink>
+            {/* <NavLink to="/cart" className={navLinkStyles}>Cart</NavLink> */}
             <NavLink to="/blog" className={navLinkStyles}>Blog</NavLink>
             <NavLink to="/about" className={navLinkStyles}>About</NavLink>
             <NavLink to="/contact" className={navLinkStyles}>Contact</NavLink>
@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
               <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
               </svg>
-              Log In
+              Login
             </NavLink>
           </div>
 
@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
           <div className="flex flex-col space-y-4 pb-4">
             <NavLink to="/home" className={navLinkStyles} onClick={handleNavLinkClick}>Home</NavLink>
             <NavLink to="/shop" className={navLinkStyles} onClick={handleNavLinkClick}>Shop</NavLink>
-            <NavLink to="/cart" className={navLinkStyles} onClick={handleNavLinkClick}>Cart</NavLink>
+            {/* <NavLink to="/cart" className={navLinkStyles} onClick={handleNavLinkClick}>Cart</NavLink> */}
             <NavLink to="/blog" className={navLinkStyles} onClick={handleNavLinkClick}>Blog</NavLink>
             <NavLink to="/about" className={navLinkStyles} onClick={handleNavLinkClick}>About</NavLink>
             <NavLink to="/contact" className={navLinkStyles} onClick={handleNavLinkClick}>Contact</NavLink>
@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
               <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
               </svg>
-              Log In
+              Login
             </button>
           </div>
         </div>

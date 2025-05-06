@@ -1,6 +1,6 @@
 import posts from "../Data/Blogs";
 import Footer from "../Layouts/Footer";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import PopularPosts from "../Sections/shop-sections/PopularPosts";
 import blogBg from "../assets/Blog/blogBg.jpg";
 
@@ -89,8 +89,8 @@ const Blog = () => {
                           {post.comments}
                         </span>
                       </div>
-                      <a
-                        href="#"
+                      <Link
+                        to={`/postDetails/${post.id}`}
                         className="flex items-center text-red-500 hover:underline"
                       >
                         Read More
@@ -107,7 +107,7 @@ const Blog = () => {
                             d="M9 5l7 7-7 7"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
