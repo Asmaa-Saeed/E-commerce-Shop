@@ -42,6 +42,7 @@ const ProductGrid = () => {
             {currentProducts.map((product) => (
               <ProductCard
                 key={product.id}
+                id={product.id}
                 name={product.name}
                 price={product.price}
                 rating={product.rating}
@@ -67,8 +68,6 @@ const ProductGrid = () => {
             ))}
           </div>
         </div>
-
-       
       </div>
     </div>
   );

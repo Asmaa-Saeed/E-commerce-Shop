@@ -10,16 +10,18 @@ import About from './Pages/About'
 import PostDetails from './Pages/PostDetails'
 import Login from './Pages/Registeration/Login'
 import SignUp from './Pages/Registeration/SignUp'
+import ProductDetails from './Pages/ProductDetails'
+import { CartProvider } from './context/CartContext'
 // import PostDetails from './Pages/PostDetails'
 
 function App() {
 
 
   return (
-    <>
-    <Router>
-      <Navbar />
-      <Routes>
+    <CartProvider>
+      <Router>
+        <Navbar />
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
@@ -28,12 +30,12 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/postDetails/:id" element={<PostDetails />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signUp" element={<SignUp />} />
-
-      </Routes>
-    </Router> 
-    </>
+        </Routes>
+      </Router> 
+    </CartProvider>
   )
 }
 

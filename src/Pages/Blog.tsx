@@ -8,20 +8,20 @@ const Blog = () => {
   return (
     <div>
       <div
-        className="relative w-full h-92 bg-cover bg-center flex items-center justify-center"
+        className="relative w-full h-92 bg-cover bg-center flex items-center justify-center transition-transform duration-500"
         style={{ backgroundImage: `url(${blogBg})` }}
       >
         <div className="absolute inset-0 bg-white opacity-5"></div>
         <div className="z-10">
           {/* <h1 className="text-4xl font-bold text-gray-200 text-center text-shadow-blue-100 text-shadow tracking-wide">Our Blog</h1> */}
-          <h1 className="text-4xl font-bold text-gray-200 text-center mt-4 text-shadow-blue-100 text-shadow tracking-wide">
+          <h1 className="text-4xl font-bold text-gray-200 text-center mt-4 text-shadow-blue-100 text-shadow tracking-wide transition-all duration-1000 ease-in-out transform">
             Stay Updated With Our Latest News & Stories
           </h1>
         </div>
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10">
+      <div className="relative z-10 transition-all duration-1000 ease-in-out transform">
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
           <div className="container max-w-[95%] mx-auto px-4 py-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -67,7 +67,7 @@ const Blog = () => {
                       {post.excerpt}
                     </p>
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-4">
+                      <div className="flex items-center space-x-4 transition-all duration-1000 ease-in-out transform">
                         <span className="flex items-center text-gray-600">
                           <svg
                             className="w-5 h-5 mr-1 text-red-500"

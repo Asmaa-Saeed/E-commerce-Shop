@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../assets/Logo/logo.png';
 import { NavLink } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
 
 
 const Navbar: React.FC = () => {
@@ -32,7 +33,7 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center space-x-6">
             <NavLink to="/home" className={navLinkStyles}>Home</NavLink>
             <NavLink to="/shop" className={navLinkStyles}>Shop</NavLink>
-            {/* <NavLink to="/cart" className={navLinkStyles}>Cart</NavLink> */}
+            <NavLink to="/cart" className={navLinkStyles}>Cart</NavLink>
             <NavLink to="/blog" className={navLinkStyles}>Blog</NavLink>
             <NavLink to="/about" className={navLinkStyles}>About</NavLink>
             <NavLink to="/contact" className={navLinkStyles}>Contact</NavLink>
@@ -67,7 +68,7 @@ const Navbar: React.FC = () => {
           <div className="flex flex-col space-y-4 pb-4">
             <NavLink to="/home" className={navLinkStyles} onClick={handleNavLinkClick}>Home</NavLink>
             <NavLink to="/shop" className={navLinkStyles} onClick={handleNavLinkClick}>Shop</NavLink>
-            {/* <NavLink to="/cart" className={navLinkStyles} onClick={handleNavLinkClick}>Cart</NavLink> */}
+            <NavLink to="/cart" className={navLinkStyles} onClick={handleNavLinkClick}>Cart</NavLink>
             <NavLink to="/blog" className={navLinkStyles} onClick={handleNavLinkClick}>Blog</NavLink>
             <NavLink to="/about" className={navLinkStyles} onClick={handleNavLinkClick}>About</NavLink>
             <NavLink to="/contact" className={navLinkStyles} onClick={handleNavLinkClick}>Contact</NavLink>
@@ -77,6 +78,25 @@ const Navbar: React.FC = () => {
               </svg>
               Login
             </button>
+            <NavLink to="/login" className={navLinkStyles} onClick={handleNavLinkClick}>Login</NavLink>
+            <NavLink to="/cart" className="ml-4 relative" onClick={handleNavLinkClick}>
+              <svg 
+                className="w-6 h-6 text-gray-700 hover:text-teal-600 transition-colors duration-200" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth="2" 
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" 
+                />
+              </svg>
+              <span className="absolute -top-2 -right-2 bg-teal-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                {useCart().getTotalItems()}
+              </span>
+            </NavLink>
           </div>
         </div>
       </div>

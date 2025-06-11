@@ -72,7 +72,8 @@ export const products: Product[] = [
     price: 245,
     rating: 4,
     image: MensImg01,
-    category: 'mens'
+    category: 'mens',
+    description: 'Premium quality training shoes with enhanced comfort and durability. Perfect for both casual wear and athletic activities.'
   },
   {
     id: 2,
@@ -80,7 +81,8 @@ export const products: Product[] = [
     price: 235,
     rating: 5,
     image: MensImg10,
-    category: 'mens'
+    category: 'mens',
+    description: 'Professional-grade training shoes with advanced cushioning technology. Designed for maximum performance and comfort.'
   },
   {
     id: 3,
@@ -88,7 +90,8 @@ export const products: Product[] = [
     price: 255,
     rating: 4,
     image: MensImg02,
-    category: 'mens'
+    category: 'mens',
+    description: 'Innovative design with superior support and flexibility. Ideal for runners and athletes seeking peak performance.'
   },
   {
     id: 4,
@@ -96,7 +99,8 @@ export const products: Product[] = [
     price: 220,
     rating: 5,
     image: MensImg03,
-    category: 'mens'
+    category: 'mens',
+    description: 'Lightweight racing shoes with adaptive fit technology. Perfect for speed training and competitive running.'
   },
   {
     id: 5,
@@ -104,7 +108,8 @@ export const products: Product[] = [
     price: 267,
     rating: 4,
     image: MensImg04,
-    category: 'mens'
+    category: 'mens',
+    description: 'Versatile sports shoes suitable for various activities. Features excellent traction and breathable design.'
   },
   {
     id: 6,
@@ -112,7 +117,8 @@ export const products: Product[] = [
     price: 132,
     rating: 5,
     image: LadiesImg01,
-    category: 'ladies'
+    category: 'ladies',
+    description: 'Stylish and comfortable dress shoes for women. Perfect for both casual and formal occasions.'
   },
   {
     id: 7,
@@ -120,7 +126,8 @@ export const products: Product[] = [
     price: 165,
     rating: 4,
     image: MensImg05,
-    category: 'mens'
+    category: 'mens',
+    description: 'Classic retro design with modern comfort features. A perfect blend of style and functionality.'
   },
   {
     id: 8,
@@ -128,7 +135,8 @@ export const products: Product[] = [
     price: 175,
     rating: 5,
     image: MensImg06,
-    category: 'mens'
+    category: 'mens',
+    description: 'High-performance shoes with advanced boost technology. Provides exceptional energy return and comfort.'
   },
   {
     id: 9,
@@ -136,7 +144,8 @@ export const products: Product[] = [
     price: 245,
     rating: 4,
     image: MensImg07,
-    category: 'mens'
+    category: 'mens',
+    description: 'Modern urban shoes with responsive cushioning. Perfect for city life and casual wear.'
   },
   {
     id: 10,
@@ -144,7 +153,8 @@ export const products: Product[] = [
     price: 147,
     rating: 5,
     image: LadiesImg02,
-    category: 'ladies'
+    category: 'ladies',
+    description: 'Elegant dress with sustainable materials. Combines style with environmental consciousness.'
   },
   {
     id: 11,
@@ -152,7 +162,8 @@ export const products: Product[] = [
     price: 89,
     rating: 4,
     image: BagsImg01,
-    category: 'bag'
+    category: 'bag',
+    description: 'Spacious and durable backpack with multiple compartments. Perfect for work, travel, or daily use.'
   },
   {
     id: 12,
@@ -160,7 +171,8 @@ export const products: Product[] = [
     price: 75,
     rating: 5,
     image: BagsImg02,
-    category: 'bag'
+    category: 'bag',
+    description: 'Large capacity duffle bag with water-resistant material. Ideal for sports equipment and travel.'
   },
   {
     id: 13,
@@ -168,7 +180,8 @@ export const products: Product[] = [
     price: 35,
     rating: 4,
     image: CapsImg01,
-    category: 'cap'
+    category: 'cap',
+    description: 'Timeless snapback design with adjustable fit. Perfect for casual everyday wear.'
   },
   {
     id: 14,
@@ -176,7 +189,8 @@ export const products: Product[] = [
     price: 45,
     rating: 5,
     image: CapsImg02,
-    category: 'cap'
+    category: 'cap',
+    description: 'High-quality fitted cap with comfortable material. Great for sports and casual wear.'
   },
   {
     id: 15,
@@ -184,7 +198,8 @@ export const products: Product[] = [
     price: 120,
     rating: 5,
     image: PerfumesImg01,
-    category: 'perfumes'
+    category: 'perfumes',
+    description: 'Fresh and invigorating scent inspired by ocean waves. Perfect for daily wear.'
   },
   {
     id: 16,
@@ -192,7 +207,8 @@ export const products: Product[] = [
     price: 150,
     rating: 4,
     image: PerfumesImg02,
-    category: 'perfumes'
+    category: 'perfumes',
+    description: 'Rich and mysterious fragrance for special occasions. Long-lasting scent with unique character.'
   },
   {
     id: 17,
@@ -200,7 +216,8 @@ export const products: Product[] = [
     price: 189,
     rating: 5,
     image: BootsImg01,
-    category: 'boots'
+    category: 'boots',
+    description: 'Durable leather combat boots with excellent grip. Perfect for outdoor activities and casual wear.'
   },
   {
     id: 18,
@@ -208,7 +225,8 @@ export const products: Product[] = [
     price: 210,
     rating: 4,
     image: BootsImg02,
-    category: 'boots'
+    category: 'boots',
+    description: 'Professional hiking boots with waterproof technology. Designed for challenging terrains.'
   },
   {
     id: 19,
@@ -216,7 +234,8 @@ export const products: Product[] = [
     price: 110,
     rating: 5,
     image: MensImg08,
-    category: 'mens'
+    category: 'mens',
+    description: 'Comfortable and stylish track pants with moisture-wicking fabric. Perfect for workouts and casual wear.'
   },
   {
     id: 20,
@@ -224,7 +243,8 @@ export const products: Product[] = [
     price: 95,
     rating: 4,
     image: MensImg09,
-    category: 'mens'
+    category: 'mens',
+    description: 'Lightweight athletic pants with stretch fabric. Ideal for sports and everyday activities.'
   },
   {
     id: 21,
@@ -232,7 +252,8 @@ export const products: Product[] = [
     price: 189,
     rating: 5,
     image: MensImg10,
-    category: 'mens'
+    category: 'mens',
+    description: 'High-performance running shoes with advanced cushioning. Designed for serious runners.'
   },
   {
     id: 22,
@@ -240,7 +261,8 @@ export const products: Product[] = [
     price: 79,
     rating: 4,
     image: LadiesImg03,
-    category: 'ladies'
+    category: 'ladies',
+    description: 'Beautiful floral print dress perfect for summer. Light and comfortable with elegant design.'
   },
   {
     id: 23,
@@ -248,7 +270,8 @@ export const products: Product[] = [
     price: 159,
     rating: 5,
     image: BagsImg03,
-    category: 'bag'
+    category: 'bag',
+    description: 'Stylish leather tote bag with spacious interior. Perfect for work and shopping.'
   },
   {
     id: 24,
