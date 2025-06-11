@@ -199,7 +199,7 @@ export const products: Product[] = [
     rating: 5,
     image: PerfumesImg01,
     category: 'perfumes',
-    description: 'Fresh and invigorating scent inspired by ocean waves. Perfect for daily wear.'
+    description: 'A refreshing aquatic fragrance with notes of sea salt and citrus. Perfect for everyday wear.'
   },
   {
     id: 16,
@@ -279,7 +279,8 @@ export const products: Product[] = [
     price: 29,
     rating: 4,
     image: CapsImg03,
-    category: 'cap'
+    category: 'cap',
+    description: 'Classic baseball cap with adjustable strap. Perfect for sports and casual wear.'
   },
   {
     id: 25,
@@ -287,7 +288,8 @@ export const products: Product[] = [
     price: 135,
     rating: 5,
     image: PerfumesImg03,
-    category: 'perfumes'
+    category: 'perfumes',
+    description: 'Delicate floral fragrance with notes of rose and jasmine. Perfect for romantic occasions.'
   },
   {
     id: 26,
@@ -295,7 +297,8 @@ export const products: Product[] = [
     price: 225,
     rating: 4,
     image: BootsImg03,
-    category: 'boots'
+    category: 'boots',
+    description: 'Warm and waterproof winter boots. Perfect for cold weather conditions.'
   },
   {
     id: 27,
@@ -303,7 +306,8 @@ export const products: Product[] = [
     price: 165,
     rating: 5,
     image: LadiesImg04,
-    category: 'ladies'
+    category: 'ladies',
+    description: 'Sophisticated evening dress with elegant design and premium fabric. Perfect for special occasions.'
   },
   {
     id: 28,
@@ -311,7 +315,8 @@ export const products: Product[] = [
     price: 65,
     rating: 4,
     image: BagsImg04,
-    category: 'bag'
+    category: 'bag',
+    description: 'Versatile travel backpack with multiple compartments and laptop sleeve. Perfect for travelers.'
   },
   {
     id: 29,
@@ -319,7 +324,8 @@ export const products: Product[] = [
     price: 32,
     rating: 5,
     image: CapsImg04,
-    category: 'cap'
+    category: 'cap',
+    description: 'Lightweight and breathable cap designed for athletic performance. Features moisture-wicking technology.'
   },
   {
     id: 30,
@@ -327,7 +333,8 @@ export const products: Product[] = [
     price: 110,
     rating: 4,
     image: PerfumesImg04,
-    category: 'perfumes'
+    category: 'perfumes',
+    description: 'Exotic oriental fragrance with spicy notes. Perfect for special occasions.'
   },
   {
     id: 31,
@@ -335,7 +342,8 @@ export const products: Product[] = [
     price: 195,
     rating: 5,
     image: BootsImg04,
-    category: 'boots'
+    category: 'boots',
+    description: 'Warm and waterproof winter boots. Perfect for cold weather conditions.'
   },
   {
     id: 32,
@@ -343,7 +351,8 @@ export const products: Product[] = [
     price: 85,
     rating: 4,
     image: PerfumesImg05,
-    category: 'perfumes'
+    category: 'perfumes',
+    description: 'Sophisticated evening dress with elegant design and premium fabric. Perfect for special occasions.'
   },
   {
     id: 33,
@@ -351,7 +360,8 @@ export const products: Product[] = [
     price: 95,
     rating: 5,
     image: BagsImg05,
-    category: 'bag'
+    category: 'bag',
+    description: 'Spacious shopping bag with reinforced handles. Perfect for daily errands.'
   },
   {
     id: 34,
@@ -359,7 +369,8 @@ export const products: Product[] = [
     price: 28,
     rating: 4,
     image: CapsImg05,
-    category: 'cap'
+    category: 'cap',
+    description: 'Classic baseball cap with adjustable strap. Perfect for sports and casual wear.'
   },
   {
     id: 35,
@@ -367,7 +378,8 @@ export const products: Product[] = [
     price: 145,
     rating: 5,
     image: PerfumesImg05,
-    category: 'perfumes'
+    category: 'perfumes',
+    description: 'Rich woody fragrance with warm undertones. Perfect for evening wear.'
   },
   {
     id: 36,
@@ -375,7 +387,8 @@ export const products: Product[] = [
     price: 235,
     rating: 4,
     image: BootsImg05,
-    category: 'boots'
+    category: 'boots',
+    description: 'Durable hiking boots with excellent traction and ankle support. Ideal for outdoor adventures.'
   },
   {
     id: 37,
@@ -383,7 +396,8 @@ export const products: Product[] = [
     price: 125,
     rating: 5,
     image: LadiesImg06,
-    category: 'ladies'
+    category: 'ladies',
+    description: 'Professional office wear with elegant design. Perfect for business settings.'
   },
   {
     id: 38,
@@ -391,7 +405,8 @@ export const products: Product[] = [
     price: 115,
     rating: 4,
     image: BagsImg06,
-    category: 'bag'
+    category: 'bag',
+    description: 'Professional laptop bag with padded compartment. Perfect for work and travel.'
   },
   {
     id: 39,
@@ -399,7 +414,8 @@ export const products: Product[] = [
     price: 25,
     rating: 5,
     image: CapsImg06,
-    category: 'cap'
+    category: 'cap',
+    description: 'Warm and comfortable beanie cap. Perfect for cold weather.'
   },
   {
     id: 40,
@@ -407,7 +423,8 @@ export const products: Product[] = [
     price: 155,
     rating: 4,
     image: MensImg11,
-    category: 'mens'
+    category: 'mens',
+    description: 'Rich and mysterious fragrance for special occasions. Long-lasting scent with unique character.'
   },
   {
     id: 41,
@@ -415,7 +432,8 @@ export const products: Product[] = [
     price: 175,
     rating: 5,
     image: MensImg12,
-    category: 'mens'
+    category: 'mens',
+    description: 'Durable leather combat boots with excellent grip. Perfect for outdoor activities and casual wear.'
   },
   {
     id: 42,
@@ -423,7 +441,8 @@ export const products: Product[] = [
     price: 95,
     rating: 4,
     image: MensImg13,
-    category: 'mens'
+    category: 'mens',
+    description: 'Comfortable and stylish track pants with moisture-wicking fabric. Perfect for workouts and casual wear.'
   },
   {
     id: 43,
@@ -431,7 +450,8 @@ export const products: Product[] = [
     price: 85,
     rating: 5,
     image: BagsImg07,
-    category: 'bag'
+    category: 'bag',
+    description: 'Stylish messenger bag with multiple compartments. Perfect for work or school.'
   },
   {
     id: 44,
@@ -439,7 +459,8 @@ export const products: Product[] = [
     price: 30,
     rating: 4,
     image: CapsImg07,
-    category: 'cap'
+    category: 'cap',
+    description: 'Classic fisherman cap with comfortable fit. Perfect for casual outdoor wear.'
   },
   {
     id: 45,
@@ -447,7 +468,8 @@ export const products: Product[] = [
     price: 130,
     rating: 5,
     image: MensImg08,
-    category: 'mens'
+    category: 'mens',
+    description: 'Delicate floral fragrance with notes of rose and jasmine. Perfect for romantic occasions.'
   },
   {
     id: 46,
@@ -455,7 +477,8 @@ export const products: Product[] = [
     price: 215,
     rating: 4,
     image: BootsImg06,
-    category: 'boots'
+    category: 'boots',
+    description: 'Waterproof rain boots with comfortable fit. Perfect for wet weather.'
   },
   {
     id: 47,
@@ -463,7 +486,8 @@ export const products: Product[] = [
     price: 155,
     rating: 5,
     image: LadiesImg07,
-    category: 'ladies'
+    category: 'ladies',
+    description: 'Elegant party dress with modern design. Perfect for special events.'
   },
   {
     id: 48,
@@ -471,7 +495,8 @@ export const products: Product[] = [
     price: 70,
     rating: 4,
     image: LadiesImg04,
-    category: 'ladies'
+    category: 'ladies',
+    description: 'Light and comfortable summer dress with floral pattern. Perfect for warm weather.'
   },
   {
     id: 49,
@@ -479,7 +504,8 @@ export const products: Product[] = [
     price: 35,
     rating: 5,
     image: LadiesImg10,
-    category: 'ladies'
+    category: 'ladies',
+    description: 'Classic baseball cap with adjustable strap. Perfect for sports and casual wear.'
   },
   {
     id: 50,
@@ -487,6 +513,223 @@ export const products: Product[] = [
     price: 125,
     rating: 4,
     image: LadiesImg09,
-    category: 'ladies'
+    category: 'ladies',
+    description: 'Comfortable casual dress with modern style. Perfect for everyday wear.'
+  },
+  {
+    id: 51,
+    name: 'CLASSIC LEATHER BOOTS',
+    price: 199,
+    rating: 4,
+    image: BootsImg01,
+    category: 'boots',
+    description: 'Premium leather boots with durable construction and comfortable fit. Ideal for all seasons.'
+  },
+  {
+    id: 52,
+    name: 'ELEGANT EVENING DRESS',
+    price: 189,
+    rating: 5,
+    image: LadiesImg03,
+    category: 'ladies',
+    description: 'Sophisticated evening dress with elegant design and premium fabric. Perfect for special occasions.'
+  },
+  {
+    id: 53,
+    name: 'DESIGNER TOTE BAG',
+    price: 129,
+    rating: 4,
+    image: BagsImg03,
+    category: 'bag',
+    description: 'Stylish and spacious tote bag with premium materials. Perfect for work or shopping.'
+  },
+  {
+    id: 54,
+    name: 'SPORTS PERFORMANCE CAP',
+    price: 29,
+    rating: 4,
+    image: CapsImg03,
+    category: 'cap',
+    description: 'Lightweight and breathable cap designed for athletic performance. Features moisture-wicking technology.'
+  },
+  {
+    id: 55,
+    name: 'LUXURY FRAGRANCE',
+    price: 150,
+    rating: 5,
+    image: PerfumesImg02,
+    category: 'perfumes',
+    description: 'Exclusive luxury fragrance with rich, complex notes. Perfect for special occasions.'
+  },
+  {
+    id: 56,
+    name: 'HIKING BOOTS',
+    price: 179,
+    rating: 4,
+    image: BootsImg02,
+    category: 'boots',
+    description: 'Durable hiking boots with excellent traction and ankle support. Ideal for outdoor adventures.'
+  },
+  {
+    id: 57,
+    name: 'CASUAL SUMMER DRESS',
+    price: 89,
+    rating: 4,
+    image: LadiesImg04,
+    category: 'ladies',
+    description: 'Light and comfortable summer dress with floral pattern. Perfect for warm weather.'
+  },
+  {
+    id: 58,
+    name: 'TRAVEL BACKPACK',
+    price: 99,
+    rating: 5,
+    image: BagsImg04,
+    category: 'bag',
+    description: 'Versatile travel backpack with multiple compartments and laptop sleeve. Perfect for travelers.'
+  },
+  {
+    id: 59,
+    name: 'FASHION SNAPBACK',
+    price: 34,
+    rating: 4,
+    image: CapsImg04,
+    category: 'cap',
+    description: 'Trendy snapback cap with modern design. Great for casual street style.'
+  },
+  {
+    id: 60,
+    name: 'FLORAL PERFUME',
+    price: 110,
+    rating: 4,
+    image: PerfumesImg03,
+    category: 'perfumes',
+    description: 'Delicate floral fragrance with notes of rose and jasmine. Perfect for romantic occasions.'
+  },
+  {
+    id: 61,
+    name: 'CASUAL BOOTS',
+    price: 159,
+    rating: 4,
+    image: BootsImg03,
+    category: 'boots',
+    description: 'Comfortable casual boots with stylish design. Perfect for everyday wear.'
+  },
+  {
+    id: 62,
+    name: 'OFFICE ATTIRE',
+    price: 129,
+    rating: 4,
+    image: LadiesImg06,
+    category: 'ladies',
+    description: 'Professional office wear with elegant design. Perfect for business settings.'
+  },
+  {
+    id: 63,
+    name: 'SHOPPING BAG',
+    price: 79,
+    rating: 4,
+    image: BagsImg05,
+    category: 'bag',
+    description: 'Spacious shopping bag with reinforced handles. Perfect for daily errands.'
+  },
+  {
+    id: 64,
+    name: 'BASEBALL CAP',
+    price: 24,
+    rating: 4,
+    image: CapsImg05,
+    category: 'cap',
+    description: 'Classic baseball cap with adjustable strap. Perfect for sports and casual wear.'
+  },
+  {
+    id: 65,
+    name: 'WOODY PERFUME',
+    price: 130,
+    rating: 5,
+    image: PerfumesImg04,
+    category: 'perfumes',
+    description: 'Rich woody fragrance with warm undertones. Perfect for evening wear.'
+  },
+  {
+    id: 66,
+    name: 'WINTER BOOTS',
+    price: 189,
+    rating: 4,
+    image: BootsImg04,
+    category: 'boots',
+    description: 'Warm and waterproof winter boots. Perfect for cold weather conditions.'
+  },
+  {
+    id: 67,
+    name: 'PARTY DRESS',
+    price: 149,
+    rating: 5,
+    image: LadiesImg07,
+    category: 'ladies',
+    description: 'Elegant party dress with modern design. Perfect for special events.'
+  },
+  {
+    id: 68,
+    name: 'LAPTOP BAG',
+    price: 89,
+    rating: 4,
+    image: BagsImg06,
+    category: 'bag',
+    description: 'Professional laptop bag with padded compartment. Perfect for work and travel.'
+  },
+  {
+    id: 69,
+    name: 'FISHERMAN CAP',
+    price: 29,
+    rating: 4,
+    image: CapsImg06,
+    category: 'cap',
+    description: 'Classic fisherman cap with comfortable fit. Perfect for casual outdoor wear.'
+  },
+  {
+    id: 70,
+    name: 'ORIENTAL PERFUME',
+    price: 140,
+    rating: 5,
+    image: PerfumesImg05,
+    category: 'perfumes',
+    description: 'Exotic oriental fragrance with spicy notes. Perfect for special occasions.'
+  },
+  {
+    id: 71,
+    name: 'RAIN BOOTS',
+    price: 119,
+    rating: 4,
+    image: BootsImg05,
+    category: 'boots',
+    description: 'Waterproof rain boots with comfortable fit. Perfect for wet weather.'
+  },
+  {
+    id: 72,
+    name: 'CASUAL DRESS',
+    price: 99,
+    rating: 4,
+    image: LadiesImg09,
+    category: 'ladies',
+    description: 'Comfortable casual dress with modern style. Perfect for everyday wear.'
+  },
+  {
+    id: 73,
+    name: 'MESSENGER BAG',
+    price: 109,
+    rating: 4,
+    image: BagsImg07,
+    category: 'bag',
+    description: 'Stylish messenger bag with multiple compartments. Perfect for work or school.'
+  },
+  {
+    id: 74,
+    name: 'BEANIE CAP',
+    price: 19,
+    rating: 4,
+    image: CapsImg07,
+    category: 'cap',
+    description: 'Warm and comfortable beanie cap. Perfect for cold weather.'
   }
 ];
