@@ -11,7 +11,6 @@ const ProductDetails: React.FC = () => {
   const navigate = useNavigate();
   const { addToCart } = useCart();
   const [showAlert, setShowAlert] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(0);
   const [activeTab, setActiveTab] = useState('description');
   const [selectedSize, setSelectedSize] = useState('');
   

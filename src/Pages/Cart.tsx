@@ -1,4 +1,3 @@
-import React from 'react';
 import Footer from '../Layouts/Footer';
 import { useCart } from '../context/CartContext';
 import { useNavigate } from 'react-router-dom';

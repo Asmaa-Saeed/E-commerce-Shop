@@ -1,4 +1,3 @@
-import BGImage from '../assets/Contact/contactBg.jpg';
 import Footer from '../Layouts/Footer';
 import { FaEnvelope, FaPhone } from 'react-icons/fa';
 import ContactForm from '../Sections/Contact/ContactForm';
