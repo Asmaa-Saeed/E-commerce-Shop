@@ -46,5 +46,3 @@ ShopWave is a modern, high-performance e-commerce platform built with React, Typ
 ### Development Tools
 - ESLint: Code linting with custom rules
 - Prettier: Code formatting
-
-## 📁 Project Structure
